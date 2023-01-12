@@ -11,3 +11,4 @@ Visual Studio Code is a widely used editor with many useful features for program
 * Once you have succesfully installed VSCode it should look like this when you open it
 ![Alt text](file:///Users/skyler/Downloads/Image%201-11-23%20at%205.52%20PM.jpeg)
 
+![Image 1-11-23 at 5 52 PM](https://user-images.githubusercontent.com/105748004/211958360-45aef81e-fda9-4566-b607-a2be943c350b.jpeg)
