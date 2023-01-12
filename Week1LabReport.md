@@ -5,11 +5,17 @@ By Skyler Crook
 Logging into the ieng6 server can be confusing, whether its your first time or not. This is why I have created this tutorial on how to connect to the server.
 ## Step 1 - Installing VSCode
 Visual Studio Code is a widely used editor with many useful features for programming.
+
 **To install**
 * Go to [the official VSCode website](https://code.visualstudio.com/)
 * Follow the instructions on their website
 * Once you have succesfully installed VSCode it should look like this when you open it
 
-![Image](https://user-images.githubusercontent.com/105748004/211958360-45aef81e-fda9-4566-b607-a2be943c350b.jpeg)
+![LabReport1Image1](https://user-images.githubusercontent.com/105748004/212146281-2a6c437b-6505-440a-ac8f-8483e3c662d2.png)
+
 
 ## Step 2 - Connecting to ieng6
+In order to do work for the CSE 15L labs, you must connect your computer (Through VSCode) to a remote server called ieng6
+**Note**
+
+
