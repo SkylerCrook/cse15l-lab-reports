@@ -9,6 +9,7 @@ Visual Studio Code is a widely used editor with many useful features for program
 * Go to [the official VSCode website](https://code.visualstudio.com/)
 * Follow the instructions on their website
 * Once you have succesfully installed VSCode it should look like this when you open it
-![Alt text](file:///Users/skyler/Downloads/Image%201-11-23%20at%205.52%20PM.jpeg)
 
 ![Image](https://user-images.githubusercontent.com/105748004/211958360-45aef81e-fda9-4566-b607-a2be943c350b.jpeg)
+
+## Step 2 - Connecting to ieng6
