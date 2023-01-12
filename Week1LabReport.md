@@ -25,3 +25,26 @@ In order to do work for the CSE 15L labs, you must connect your computer (Throug
 **Note** If it is your first time connecting to the ieng6 server, you will recieve a message asking if you are sure that you want to connect. Type "yes" in the terminal
 * Type your password when prompted, and your terminal will now be connected to the server
 
+**Note** To disconnect from the server, run the cammand "exit"
+* Once you are succesfully connected, your terminal should look like this
+
+![LabReport1Image2](https://user-images.githubusercontent.com/105748004/212149440-cc45231c-dbad-47b7-8738-c4597743923d.png)
+
+
+## Step 3 - Testing Cammands
+To ensure that your computer is properly connected to the ieng6 server, you can test out a variety of cammands
+
+**Some Cammands you can try are**
+* cd
+* ls
+* pwd
+* mkdir
+* cp
+* Here is an example of some cammands running in the terminal
+
+![LabReport1Image3](https://user-images.githubusercontent.com/105748004/212150259-3ae1e41f-ce88-4e8e-bd42-c18df233b1a8.png)
+
+
+## Congradulations
+You now know how to install VSCode, connect to the CSE ieng6 remote server, and run some cammands.
+
