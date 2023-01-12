@@ -16,6 +16,11 @@ Visual Studio Code is a widely used editor with many useful features for program
 
 ## Step 2 - Connecting to ieng6
 In order to do work for the CSE 15L labs, you must connect your computer (Through VSCode) to a remote server called ieng6
-**Note**
+**Note** If you are using a Windows computer, you must install Git for Windows and use the Git Bash terminal in VSCode
 
+**To connect**
+* First, find your [course specific account](https://sdacs.ucsd.edu/~icc/index.php)
+* Open a Bash terminal in VSCode and type "ssh " followed by your course specific account with "@ieng6.ucsd.edu" appended to the end
+**Note** If it is your first time connecting to the ieng6 server, you will recieve a message asking if you are sure that you want to connect. Type "yes" in the terminal
+* Type your password when prompted, and your terminal will now be connected to the server
 
