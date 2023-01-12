@@ -9,5 +9,5 @@ Visual Studio Code is a widely used editor with many useful features for program
 * Go to [the official VSCode website](https://code.visualstudio.com/)
 * Follow the instructions on their website
 * Once you have succesfully installed VSCode it should look like this when you open it
-![Image](file:///Users/skyler/Downloads/Image%201-11-23%20at%205.52%20PM.jpeg)
+![Alt text](file:///Users/skyler/Downloads/Image%201-11-23%20at%205.52%20PM.jpeg)
 
