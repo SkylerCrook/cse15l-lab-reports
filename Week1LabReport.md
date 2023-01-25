@@ -23,6 +23,7 @@ In order to do work for the CSE 15L labs, you must connect your computer (Throug
 **To connect**
 * First, find your [course specific account](https://sdacs.ucsd.edu/~icc/index.php)
 * Open a Bash terminal in VSCode and type "ssh " followed by your course specific account with "@ieng6.ucsd.edu" appended to the end
+* `this is code`
 
 **Note** If it is your first time connecting to the ieng6 server, you will recieve a message asking if you are sure that you want to connect. Type "yes" in the terminal
 * Type your password when prompted, and your terminal will now be connected to the server
