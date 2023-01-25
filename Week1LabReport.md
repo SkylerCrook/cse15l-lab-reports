@@ -22,7 +22,8 @@ In order to do work for the CSE 15L labs, you must connect your computer (Throug
 
 **To connect**
 * First, find your [course specific account](https://sdacs.ucsd.edu/~icc/index.php)
-* Open a Bash terminal in VSCode and type "ssh " followed by your course specific account with "@ieng6.ucsd.edu" appended to the end
+* Open a Bash terminal in VSCode and type `ssh` followed by your course specific account with `@ieng6.ucsd.edu` appended to the end
+* This should look like `ssh cs15lwi23zz@ieng6.ucsd.edu`
 
 **Note** If it is your first time connecting to the ieng6 server, you will recieve a message asking if you are sure that you want to connect. Type "yes" in the terminal
 * Type your password when prompted, and your terminal will now be connected to the server
@@ -37,11 +38,11 @@ In order to do work for the CSE 15L labs, you must connect your computer (Throug
 To ensure that your computer is properly connected to the ieng6 server, you can test out a variety of commands
 
 **Some Commands you can try are**
-* cd
-* ls
-* pwd
-* mkdir
-* cp
+* cd: allows you to change your working directory
+* ls: prints the contents of your current working directory
+* pwd: prints out the path to your current working directory
+* mkdir: allows you to create a new directory in your current working directory (or anywhere else if a path is included)
+* cp: allows you to copy a file to a new location
 * Here is an example of some commands running in the terminal
 
 ![LabReport1Image3](https://user-images.githubusercontent.com/105748004/212150259-3ae1e41f-ce88-4e8e-bd42-c18df233b1a8.png)
