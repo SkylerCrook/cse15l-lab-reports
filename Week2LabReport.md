@@ -9,7 +9,7 @@ For this assignment, I created a local web server called StringServer that conta
 
 **Code**
 
-* Here is my code for the assignment
+Here is my code for the assignment
 
 <img width="600" alt="StringServerCodeSS" src="https://user-images.githubusercontent.com/105748004/214973511-ae0a2b8a-8bca-455e-ac69-24d88d2ecda1.png">
 
@@ -19,14 +19,14 @@ For this assignment, I created a local web server called StringServer that conta
   * it is a string which contains all of the strings passed by the user through the url
 * The handleRequest method
   * this method takes in the url passed by ther user
-  * if the url contains the correct syntax of `/add-message?s=`, then anything after the comma will get added to the string
+  * if the url contains the correct syntax of ( /add-message?s=" ), then anything after the comma will get added to the string
   * If the url is not recognized, the website will print "404 Not Found" and nothing will be added to the myPage tring
 * The main method
   * this method runs the code and creates the local host for the web server
 
 **Running the Web Server**
 
-* Here is a screenshot of the page after the first input
+Here is a screenshot of the page after the first input
 
 <img width="600" alt="LocalHostInput1SS" src="https://user-images.githubusercontent.com/105748004/214971367-dfdd20e2-6524-43c5-be85-1c699d004580.png">
 
@@ -42,7 +42,7 @@ For this assignment, I created a local web server called StringServer that conta
   * the myPage String is then assigned to "Hello There", the path after the equal sign, as it was previosuly empty
 
 
-* Here is a screenshot of my page after the second input
+Here is a screenshot of my page after the second input
 
 <img width="600" alt="LocalHostInput2SS" src="https://user-images.githubusercontent.com/105748004/214971380-8fd35566-ddb8-4da6-94a7-07fb95e56c87.png">
 
