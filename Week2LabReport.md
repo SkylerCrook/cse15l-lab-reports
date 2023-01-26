@@ -5,7 +5,7 @@ By Skyler Crook
 
 # Part 1: Servers
 
-For this assignment, I created a local web server called StringServer that contains a single string which gets lines added by inputing requests through the URI.
+For this assignment, I created a local web server called StringServer that contains a single string which gets lines added by inputing requests through the URL.
 
 **Code**
 
