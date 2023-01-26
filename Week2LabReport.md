@@ -31,7 +31,7 @@ For this assignment, I created a local web server called StringServer that conta
 <img width="600" alt="LocalHostInput1SS" src="https://user-images.githubusercontent.com/105748004/214971367-dfdd20e2-6524-43c5-be85-1c699d004580.png">
 
 * Methods
-*   This calls the handleRequest method and passes it the URI "/add-message?s=Hello There"
+  *   This calls the handleRequest method and passes it the URI "/add-message?s=Hello There"
 * Arguments
 *   The url is passed as an argument to the handleRequest method, which dissects it to make sure it contains
 *   /add-message : the first part of the path
