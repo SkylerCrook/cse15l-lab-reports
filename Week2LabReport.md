@@ -118,7 +118,7 @@ Buggy Code
 
 Fixed Code
 
-`
+```
 	static void reverseInPlace(int[] arr) {
 	
 		int temp = 0;
@@ -132,7 +132,7 @@ Fixed Code
 			arr[arr.length-i-1] = temp;
 		}
 	}
-`
+```
 
 
 
