@@ -130,7 +130,7 @@ The Fixed method only iterates through half of the array, and switches the value
 
 # Part 3: What I Learned
 
-Something that I learned in labs 2 and 3 is how to use JUnit tests. Before lab 2 I had never used JUnit and didn't know what it was, much less how to use it for testing code. However, after getting lots of experience during lab hours, I have become very comfortable using JUnit and its assorted methods, such as assertEquals(), assertArrayEquals, and AssertTrue().
+Something that I learned in labs 2 and 3 is how to use JUnit tests. Before lab 2 I had never used JUnit and didn't know what it was, much less how to use it for testing code. However, after getting lots of experience during lab hours, I have become very comfortable using JUnit and its assorted methods, such as assertEquals(), assertArrayEquals, and AssertTrue(). JUnit is a valuable resource that I will definitely use as I continue to code in Java.
 
 
 
