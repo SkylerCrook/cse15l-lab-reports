@@ -65,7 +65,6 @@ One of the bugs from lab 3 was the reverseInPlace method in ArrayExamples.java
 
 `
 	@Test
-	
 	public void testReverseInPlace() {
 	
 		int[] input = {0, 1, 2, 3, 4};
