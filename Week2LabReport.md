@@ -53,7 +53,7 @@ Here is a screenshot of my page after the second input
   * = : to split the rest of the path into different parameters
   * s : to be the first paremeter (before the =)
 * Values
-  * the myPage String then gets the string "\nThis is Skylers StringServer!" appended, as it was not empty before
+  * the myPage String then gets the string "\nThis is Skylers StringServer!" appended, as it was not empty before so the if statement does not run
 
 
 # Part 2: Bugs
