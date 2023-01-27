@@ -93,9 +93,48 @@ One of the bugs from lab 3 was the reverseInPlace method in ArrayExamples.java
 	}
 `
 
-**JUnit Tests**
-
+**JUnit Tests / Symptom**
 
 <img width="800" alt="JUnitTestsSS" src="https://user-images.githubusercontent.com/105748004/214991955-1fa7b022-4f7a-4a09-8166-0a6db94e5797.png">
+
+**The Bug**
+
+
+Buggy Code
+
+`
+	static void reverseInPlace(int[] arr) {
+	
+		for(int i = 0; i < arr.length; i += 1) {
+		
+			arr[i] = arr[arr.length - i - 1];
+		}
+		
+	}
+`
+
+
+
+
+Fixed Code
+
+`
+	static void reverseInPlace(int[] arr) {
+	
+		int temp = 0;
+		
+		for(int i = 0; i < arr.length/2; i += 1) {
+	
+			temp = arr[i];
+	
+			arr[i] = arr[arr.length - i - 1];
+	
+			arr[arr.length-i-1] = temp;
+		}
+	}
+`
+
+
+
 
 
