@@ -19,15 +19,14 @@ Here is my code for the assignment
   * it is a string which contains all of the strings passed by the user through the url
 * The handleRequest method
   * this method takes in the url passed by ther user
-  * if the url contains the correct syntax of ( /add-message?s=" ), then anything after the comma will get added to the string
-  * If the url is not recognized, the website will print "404 Not Found" and nothing will be added to the myPage tring
+  * if the url contains the correct syntax of ( /add-message?s=" ), then anything after the equal sign will get added to the string
+  * If the url is not recognized, the website will print "404 Not Found" and nothing will be added to the myPage string
 * The main method
   * this method runs the code and creates the local host for the web server
 
 **Running the Web Server**
 
 Here is a screenshot of the page after the first input
-
 <img width="600" alt="LocalHostInput1SS" src="https://user-images.githubusercontent.com/105748004/214971367-dfdd20e2-6524-43c5-be85-1c699d004580.png">
 
 * Methods
@@ -43,7 +42,6 @@ Here is a screenshot of the page after the first input
 
 
 Here is a screenshot of my page after the second input
-
 <img width="600" alt="LocalHostInput2SS" src="https://user-images.githubusercontent.com/105748004/214971380-8fd35566-ddb8-4da6-94a7-07fb95e56c87.png">
 
 * Methods
@@ -57,3 +55,7 @@ Here is a screenshot of my page after the second input
 * Values
   * the myPage String then gets the string "\nThis is Skylers StringServer!" appended, as it was not empty before
 
+
+# Part 2: Bugs
+
+One of the bugs from lab 3 was the 2 reverse methods in `ArrayExamples.java`
