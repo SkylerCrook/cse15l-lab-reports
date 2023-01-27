@@ -55,7 +55,22 @@ Here is a screenshot of my page after the second input
 * Values
   * the myPage String then gets the string "\nThis is Skylers StringServer!" appended, as it was not empty before so the if statement does not run
 
+---
 
 # Part 2: Bugs
 
-One of the bugs from lab 3 was the 2 reverse methods in `ArrayExamples.java`
+One of the bugs from lab 3 was the reverseInPlace method in ArrayExamples.java
+
+**Failure Inducing Input**
+`@Test 
+	public void testReverseInPlace() {
+    int[] input = {0, 1, 2, 3, 4};
+    ArrayExamples.reverseInPlace(input);
+    assertArrayEquals(new int[]{4, 3, 2, 1, 0}, input);
+	}`
+
+
+
+
+
+
