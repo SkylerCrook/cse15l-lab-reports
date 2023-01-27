@@ -117,7 +117,21 @@ static void reverseInPlace(int[] arr) {
 }
 ```
 
+Explanation:
+In the buggy method, the loop iterated through the entire array, changing every element to the element on the opposite side of the array. However, this meant that once the first half of the array is changed to equal the second half of the array, the second half of the array is changed to the same values that it already is (creating a mirrored array).
+The Fixed method only iterates through half of the array, and switches the values on both ends of the array. This chcanges the first half of the array to equal the back half, and vice versa.
+
+**Passed JUnit Tests**
+
+<img width="800" alt="JUnitTestsPassSS" src="https://user-images.githubusercontent.com/105748004/214994031-a03b5877-d85f-4119-b93c-f3e2e7f4535a.png">
+
+
+---
+
+# Part 3: What I Learned
+
+Something that I learned in labs 2 and 3 is how to use JUnit tests. Before lab 2 I had never used JUnit and didn't know what it was, much less how to use it for testing code. However, after getting lots of experience during lab hours, I have become very comfortable using JUnit and its assorted methods, such as assertEquals(), assertArrayEquals, and AssertTrue().
 
 
 
-
+# Thanks For Reading
