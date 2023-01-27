@@ -68,11 +68,11 @@ One of the bugs from lab 3 was the reverseInPlace method in ArrayExamples.java
 	
 	public void testReverseInPlace() {
 	
-		int[] input = {0, 1, 2, 3, 4};
+		int[] input1 = {0, 1, 2, 3, 4};
 		
-		ArrayExamples.reverseInPlace(input);
+		ArrayExamples.reverseInPlace(input1);
 		
-		assertArrayEquals(new int[]{4, 3, 2, 1, 0}, input);
+		assertArrayEquals(new int[]{4, 3, 2, 1, 0}, input1);
 		
 	}
 `
@@ -82,11 +82,11 @@ One of the bugs from lab 3 was the reverseInPlace method in ArrayExamples.java
 	
 	public void testReverseInPlace() {
 	
-		int[] input = {0, 1, 2, 1, 0};
+		int[] input2 = {0, 1, 2, 1, 0};
 	
-		ArrayExamples.reverseInPlace(input);
+		ArrayExamples.reverseInPlace(input2);
 	
-		assertArrayEquals(new int[]{0, 1, 2, 1, 0}, input);
+		assertArrayEquals(new int[]{0, 1, 2, 1, 0}, input2);
 		
 	}
 `
