@@ -11,7 +11,7 @@ For this assignment, I created a local web server called StringServer that conta
 
 Here is my code for the assignment
 
-<img width="600" alt="StringServerCodeSS" src="https://user-images.githubusercontent.com/105748004/214973511-ae0a2b8a-8bca-455e-ac69-24d88d2ecda1.png">
+<img width="800" alt="StringServerCodeSS" src="https://user-images.githubusercontent.com/105748004/214973511-ae0a2b8a-8bca-455e-ac69-24d88d2ecda1.png">
 
 * The code contains 2 methods and 1 instance variable
 * Class variable
@@ -27,7 +27,8 @@ Here is my code for the assignment
 **Running the Web Server**
 
 Here is a screenshot of the page after the first input
-<img width="600" alt="LocalHostInput1SS" src="https://user-images.githubusercontent.com/105748004/214971367-dfdd20e2-6524-43c5-be85-1c699d004580.png">
+
+<img width="800" alt="LocalHostInput1SS" src="https://user-images.githubusercontent.com/105748004/214971367-dfdd20e2-6524-43c5-be85-1c699d004580.png">
 
 * Methods
   * This calls the handleRequest method and passes it the URI "/add-message?s=Hello There"
@@ -42,7 +43,8 @@ Here is a screenshot of the page after the first input
 
 
 Here is a screenshot of my page after the second input
-<img width="600" alt="LocalHostInput2SS" src="https://user-images.githubusercontent.com/105748004/214971380-8fd35566-ddb8-4da6-94a7-07fb95e56c87.png">
+
+<img width="800" alt="LocalHostInput2SS" src="https://user-images.githubusercontent.com/105748004/214971380-8fd35566-ddb8-4da6-94a7-07fb95e56c87.png">
 
 * Methods
   * This calls the handleRequest method and passes it the URI "/add-message?s=This is Skylers StringServer!"
@@ -76,7 +78,7 @@ One of the bugs from lab 3 was the reverseInPlace method in ArrayExamples.java
 		
 	}
 `
-**Non-Failure Input**
+**Non-Failure Inducing Input**
 `
 	@Test 
 	
@@ -91,6 +93,9 @@ One of the bugs from lab 3 was the reverseInPlace method in ArrayExamples.java
 	}
 `
 
+**JUnit Tests**
 
+
+<img width="800" alt="JUnitTestsSS" src="https://user-images.githubusercontent.com/105748004/214991955-1fa7b022-4f7a-4a09-8166-0a6db94e5797.png">
 
 
