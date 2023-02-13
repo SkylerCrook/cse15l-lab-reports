@@ -12,7 +12,7 @@ There are many options which can be used to narrow the search of the find comman
 * -name
 * -exec
 * -inum
-* -perm
+* -links
 
 Soruces:
 Information about these commands all come from [geeksforgeeks](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/)
