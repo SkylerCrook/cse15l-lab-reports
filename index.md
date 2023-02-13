@@ -11,3 +11,4 @@ On this page, I will have in depth reports of my labs from this class
 * [Index](https://skylercrook.github.io/cse15l-lab-reports/index.html)
 * [Week 1 Lab Report](https://skylercrook.github.io/cse15l-lab-reports/Week1LabReport.html)
 * [Week 2 Lab Report](https://skylercrook.github.io/cse15l-lab-reports/Week2LabReport.html)
+* [Week 3 Lab Report](https://skylercrook.github.io/cse15l-lab-reports/Week3LabReport.html)
