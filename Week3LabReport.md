@@ -15,3 +15,10 @@ There are many options which can be used to narrow the search of the find comman
 * -perm
 
 
+# -name
+
+The -name command will narrow the results of the find command and look for files that include the key passed by -name
+
+
+
+
