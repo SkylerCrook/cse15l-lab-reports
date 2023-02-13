@@ -8,11 +8,14 @@ By Skyler Crook
 The find command is an extrmely useful command that is commonly used to sort through and find specific files.
 There are many options which can be used to narrow the search of the find command, and these are 4 that are useful to know.
 
-**Command Line Options**
+**Command Line Options to Go Over**
 * -name
 * -exec
-* -user
+* -inum
 * -perm
+
+Soruces:
+Information about these commands all come from [geeksforgeeks](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/)
 
 
 # -name
@@ -60,8 +63,48 @@ find ./written_2 -name "Hand*.txt" -exec grep 'help' {} \;
 This command uses the find command with -name to narrow the searches to all txt files that start with the word "Hand". It then uses the -exec option with the grep command to find all lines that include the word "help". All the lines from the txt files that have this word in them are then printed out.
 
 
+# -inum
+
+The inum command is used to search for files by their specific inode number.
+
+**Examples:**
+
+```
+find ./written_2/ -inum 204847731
+```
+<img width="569" alt="Screen Shot 2023-02-13 at 1 45 28 PM" src="https://user-images.githubusercontent.com/105748004/218581631-d3da7099-f6cd-4cdd-ae8e-36bcd5f94f20.png">
+
+This command searches through the written_2 directory for a file with the inode 204847731. Because this file exists and is present in the parent directory, the path to the file is returned.
 
 
+```
+find ./written_2/ -inum 204847634 -o -inum 204847633 -o -inum 204847632
+```
+<img width="832" alt="Screen Shot 2023-02-13 at 1 51 39 PM" src="https://user-images.githubusercontent.com/105748004/218582778-be2cc651-9eaf-41d5-8dc5-0185091cc1fb.png">
+
+This command searches through the written_2 directory for a file with the inodes 204847634, 204847633, 204847632. Note one of the inodes is for a directory, not a file. Because these files/directories exists and are present in the parent directory, the paths are returned.
 
 
+# -links
 
+The links command is used to search for files/directories based on the amount of hard links that reference a file or directory.
+
+**Examples:**
+
+```
+find ./written_2/ -name "WhereTo*.txt"  -links 1 
+```
+<img width="675" alt="Screen Shot 2023-02-13 at 2 03 15 PM" src="https://user-images.githubusercontent.com/105748004/218584778-ded1698f-d455-4580-b20e-21538c971ecc.png">
+
+This command uses the find command with -name to narrow the searches to all the txt files that start with "WhereTo". It then uses the links option to show all of the files out of those specified by -name which have exactly 1 hard link which references that inode.
+
+
+```
+find ./written_2/ -links 4
+```
+<img width="518" alt="Screen Shot 2023-02-13 at 2 06 05 PM" src="https://user-images.githubusercontent.com/105748004/218585221-a591f998-dced-4632-8949-9932ef999457.png">
+
+This command uses the find command to search through all files and directories within the written_2 directory. It then uses the links option to show which of these files or directories have exactly 4 hard links which reference that inode, which are the 2 directories returned.
+
+
+# Thank You!
