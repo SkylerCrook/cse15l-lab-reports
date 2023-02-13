@@ -5,5 +5,13 @@ By Skyler Crook
 
 # find Command
 
-command line options
+The find command is an extrmely useful command that is commonly used to sort through and find specific files.
+There are many options which can be used to narrow the search of the find command, and these are 4 that are useful to know.
+
+**Command Line Options**
+* -name
+* -exec
+* -user
+* -perm
+
 
