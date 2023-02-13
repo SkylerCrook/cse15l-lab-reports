@@ -29,3 +29,13 @@ find ./written_2 -name WhereToFrance.txt
 This command searches through the /written_2 directory and looks for a file named WhereToFrance.txt
 Since this file exists, the terminal returns the path to the file passed by the command.
 
+
+```
+find ./written_2 -name HistoryJ*.*
+```
+<img width="577" alt="Screen Shot 2023-02-13 at 12 27 07 PM" src="https://user-images.githubusercontent.com/105748004/218567369-9520e49b-18e4-427a-a0b4-47f37a0c280b.png">
+
+This command using the * symbol to look for patterns in the -name search. It searches through the /written_2 directory and looks for a file named HistoryJ* which will look for any file that starts with HistoryJ and the * will allow any text after to be returned. The .* means that a file of any type will be returned by the command.
+
+
+
