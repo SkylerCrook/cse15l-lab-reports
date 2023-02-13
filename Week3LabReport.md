@@ -3,5 +3,7 @@ By Skyler Crook
 
 ---
 
-# Part 1: Servers
+# find Command
+
+command line options
 
