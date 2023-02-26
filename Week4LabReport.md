@@ -3,108 +3,113 @@ By Skyler Crook
 
 ---
 
-# find Command
+# Competition
 
-The find command is an extrmely useful command that is commonly used to sort through and find specific files.
-There are many options which can be used to narrow the search of the find command, and these are 4 that are useful to know.
-
-**Command Line Options to Go Over**
-* -name
-* -exec
-* -inum
-* -links
-
-Soruces:
-Information about these commands all come from [geeksforgeeks](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/)
+1. Setup Delete any existing forks of the repository you have on your account
+2. Setup Fork the repository
+3. The real deal Start the timer!
+4. Log into ieng6
+5. Clone your fork of the repository from your Github account
+6. Run the tests, demonstrating that they fail
+7. Edit the code file to fix the failing test
+8. Run the tests, demonstrating that they now succeed
+9. Commit and push the resulting change to your Github account (you can pick any commit message!)
 
 
-# -name
 
-The -name command will narrow the results of the find command and look for files that include the key passed by -name
-
-**Examples:**
+# Step 4
+**Log into ieng6**
 
 ```
-find ./written_2 -name WhereToFrance.txt
+ssh cs15lwi23anl@ieng6.ucsd.edu
 ```
-<img width="633" alt="Screen Shot 2023-02-13 at 12 22 11 PM" src="https://user-images.githubusercontent.com/105748004/218566501-40d42c6d-bb64-43c9-b253-3c4305561aab.png">
 
-This command searches through the /written_2 directory and looks for a file named WhereToFrance.txt
-Since this file exists, the terminal returns the path to the file passed by the command.
+I used the ssh command to login into the ieng6 server
 
-
-```
-find ./written_2 -name HistoryJ*.*
-```
-<img width="577" alt="Screen Shot 2023-02-13 at 12 27 07 PM" src="https://user-images.githubusercontent.com/105748004/218567369-9520e49b-18e4-427a-a0b4-47f37a0c280b.png">
-
-This command using the * symbol to look for patterns in the -name search. It searches through the /written_2 directory and looks for a file named HistoryJ* which will look for any file that starts with HistoryJ and the * will allow any text after to be returned. The .* means that a file of any type will be found by the command. The paths of all the files that match the command are then returned.
+<img width="459" alt="Screen Shot 2023-02-26 at 1 00 00 PM" src="https://user-images.githubusercontent.com/105748004/221436994-901ba25c-3ca7-418e-8c82-1f6b0f5c76f0.png">
 
 
-# -exec
 
-the exec command is used to take the output of the find command and apply another command to it.
-
-**Examples:**
+# Step 5
+**Clone your fork of the repository from your Github account**
 
 ```
-find ./written_2 -name "WhereTo*.txt" -exec wc {} \;
+git clone git@github.com:SkylerCrook/lab7.git
 ```
-<img width="703" alt="Screen Shot 2023-02-13 at 12 54 57 PM" src="https://user-images.githubusercontent.com/105748004/218572477-184d1132-4ab9-4344-9c04-dacac9308169.png">
 
-This command uses the find command with -name to narrow the searches to all the txt files that start with "WhereTo". It then uses the -exec option and applies the command wc to all the files returned by the find command. This then prints the line, word, and character count of each of the files.
+I used git clone with the ssh key to the fork of the repository on GitHub to clone it into my account
 
-
-```
-find ./written_2 -name "Hand*.txt" -exec grep 'help' {} \;
-```
-<img width="750" alt="Screen Shot 2023-02-13 at 12 46 55 PM" src="https://user-images.githubusercontent.com/105748004/218571058-60d60db9-dbcc-4871-9fd6-28b5bb30c841.png">
-
-This command uses the find command with -name to narrow the searches to all txt files that start with the word "Hand". It then uses the -exec option with the grep command to find all lines that include the word "help". All the lines from the txt files that have this word in them are then printed out.
+<img width="552" alt="Screen Shot 2023-02-26 at 1 04 50 PM" src="https://user-images.githubusercontent.com/105748004/221437216-a32de8d1-4424-401f-9dc9-b25983e0d5e3.png">
 
 
-# -inum
 
-The inum command is used to search for files by their specific inode number.
-
-**Examples:**
+# Step 6
+**Run the tests, demonstrating that they fail**
 
 ```
-find ./written_2/ -inum 204847731
+cd lab7/
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
 ```
-<img width="569" alt="Screen Shot 2023-02-13 at 1 45 28 PM" src="https://user-images.githubusercontent.com/105748004/218581631-d3da7099-f6cd-4cdd-ae8e-36bcd5f94f20.png">
 
-This command searches through the written_2 directory for a file with the inode 204847731. Because this file exists and is present in the parent directory, the path to the file is returned.
+I used the cd command to change lab7 to my working directory
+Next I compiled the files using javac and the junit jar files
+Finally I ran the ListExamplesTests file with JUnit to produce the output of the tests
 
-
-```
-find ./written_2/ -inum 204847634 -o -inum 204847633 -o -inum 204847632
-```
-<img width="832" alt="Screen Shot 2023-02-13 at 1 51 39 PM" src="https://user-images.githubusercontent.com/105748004/218582778-be2cc651-9eaf-41d5-8dc5-0185091cc1fb.png">
-
-This command searches through the written_2 directory for a file with the inodes 204847634, 204847633, 204847632. Note one of the inodes is for a directory, not a file. Because these files/directories exists and are present in the parent directory, the paths are returned.
+<img width="905" alt="Screen Shot 2023-02-26 at 1 21 12 PM" src="https://user-images.githubusercontent.com/105748004/221437984-346d6e99-8400-4964-a014-57bc9b7bdbb5.png">
 
 
-# -links
 
-The links command is used to search for files/directories based on the amount of hard links that reference a file or directory.
-
-**Examples:**
+# Step 7
+**Edit the code file to fix the failing test**
 
 ```
-find ./written_2/ -name "WhereTo*.txt"  -links 1 
+nano ListExamples.java
+<down arrow>(x42)
+<right arrow>(x12)
+<delete>
+2
+^O
+<enter>
+^X
 ```
-<img width="675" alt="Screen Shot 2023-02-13 at 2 03 15 PM" src="https://user-images.githubusercontent.com/105748004/218584778-ded1698f-d455-4580-b20e-21538c971ecc.png">
 
-This command uses the find command with -name to narrow the searches to all the txt files that start with "WhereTo". It then uses the links option to show all of the files out of those specified by -name which have exactly 1 hard link which references that inode.
+I used the nano command to go into ListExamples.java
+Then I moved down to line 43 and changed "index1" to "index2"
+Next I saved and then exited nano
 
+<img width="974" alt="Screen Shot 2023-02-26 at 1 13 18 PM" src="https://user-images.githubusercontent.com/105748004/221437664-f0e30f64-c45c-44f1-9087-e7c5c8ab88dd.png">
+
+
+
+# Step 8
+**Run the tests, demonstrating that they now succeed**
 
 ```
-find ./written_2/ -links 4
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples
 ```
-<img width="518" alt="Screen Shot 2023-02-13 at 2 06 05 PM" src="https://user-images.githubusercontent.com/105748004/218585221-a591f998-dced-4632-8949-9932ef999457.png">
 
-This command uses the find command to search through all files and directories within the written_2 directory. It then uses the links option to show which of these files or directories have exactly 4 hard links which reference that inode, which are the 2 directories returned.
+<img width="923" alt="Screen Shot 2023-02-26 at 1 22 29 PM" src="https://user-images.githubusercontent.com/105748004/221438050-e13b106c-da14-4e1c-9fb9-3d205fb1c923.png">
 
 
-# Thank You!
+
+
+# Step 9
+**Commit and push the resulting change to your Github account (you can pick any commit message!)**
+
+```
+git add ListExamples.java
+git commit -m  "Fixed ListExamples"
+git push
+```
+
+First I added the changed file to the files I will commit next through git
+Then I commited the file with the message "Fixed ListExamples"
+Finally I pushed the commits
+
+<img width="546" alt="Screen Shot 2023-02-26 at 1 24 44 PM" src="https://user-images.githubusercontent.com/105748004/221438152-ea8ac8b2-75a4-49b3-b236-5fb2f8be8de3.png">
+
+
+
+# Thank You
