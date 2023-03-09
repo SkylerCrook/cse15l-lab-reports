@@ -27,7 +27,7 @@ To attempt the challenge these where the rules we had to follow:
 
 Originally I ran all of the tests using individual commands and nano to edit the file
 
-**Commands I used**
+Commands I used:
 
 ```
 ssh cs15lwi23anl@ieng6.ucsd.edu
@@ -37,7 +37,7 @@ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
 nano ListExamples.java
 ```
-After using nano I manually changed the file
+After using nano I manually changed the file in the nano editor:
 ```
 <down arrow>(x42)
 <right arrow>(x12)
@@ -47,7 +47,7 @@ After using nano I manually changed the file
 <enter>
 ^X
 ```
-And then ran the tests and commited/pushed to GitHub
+And then ran the tests and commited/pushed to GitHub:
 ```
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples
