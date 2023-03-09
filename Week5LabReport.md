@@ -72,7 +72,11 @@ sed -i '43 s/index1/index2/' ListExamples.java
 Full command
 ```
 ssh cs15lwi23anl@ieng6.ucsd.edu
-git clone git@github.com:SkylerCrook/lab7.git ; cd lab7/ ; javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java ; java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests ; sed -i '43 s/index1/index2/' ListExamples.java ; javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java ; java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests ; git add ListExamples.java ; git commit -m  "Fixed ListExamples" ; git push
+git clone git@github.com:SkylerCrook/lab7.git ; cd lab7/ ; javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java ;
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests ;
+sed -i '43 s/index1/index2/' ListExamples.java ; javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java ;
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests ;
+git add ListExamples.java ; git commit -m  "Fixed ListExamples" ; git push
 ```
 This uses the same commands as before, but replaces the `nano` command with the `sed` command. This command changes "index1" to "index2" on line 43, and uses the -i modifier to directly change the file.
 
