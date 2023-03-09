@@ -83,7 +83,7 @@ This uses the same commands as before, but replaces the `nano` command with the 
 
 # Results
 
-Using this new command, I got my time down to 8 seconds, as I did not have to spend any time typing, looking for commands, or using nano to changhe the document. Instead the time was just based on how fast the computer can run the commands.
+Using this new command, I got my time down to 6 seconds, as I did not have to spend any time typing, looking for commands, or using nano to changhe the document. Instead the time was just based on how fast the computer can run the commands.
 
 
 # Thank You
