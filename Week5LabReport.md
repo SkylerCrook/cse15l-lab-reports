@@ -63,13 +63,13 @@ Using these commands I was able to achieve a relatively fast time by using my pa
 
 To improve my commands and make the process as fast as possible, I knew that I needed to do more then string all of the commands together. To accomplish this I used the sed command, whioch allowed me to change the file directly from the command line.
 
-Added line
+Added line:
 ```
 sed -i '43 s/index1/index2/' ListExamples.java
 
 ```
 
-Full command
+Full command:
 ```
 ssh cs15lwi23anl@ieng6.ucsd.edu
 git clone git@github.com:SkylerCrook/lab7.git ; cd lab7/ ; javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java ;
