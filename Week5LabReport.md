@@ -63,14 +63,23 @@ Using these commands I was able to achieve a relatively fast time by using my pa
 
 To improve my commands and make the process as fast as possible, I knew that I needed to do more then string all of the commands together. To accomplish this I used the sed command, whioch allowed me to change the file directly from the command line.
 
+Added line
+```
+sed -i '43 s/index1/index2/' ListExamples.java
+
+```
+
+Full command
 ```
 ssh cs15lwi23anl@ieng6.ucsd.edu
-
+git clone git@github.com:SkylerCrook/lab7.git ; cd lab7/ ; javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java ; java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests ; sed -i '43 s/index1/index2/' ListExamples.java ; javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java ; java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests ; git add ListExamples.java ; git commit -m  "Fixed ListExamples" ; git push
 ```
+This uses the same commands as before, but replaces the `nano` command with the `sed` command. This command changes "index1" to "index2" on line 43, and uses the -i modifier to directly change the file.
 
 
+# Results
 
-
+Using this new command, I got my time down to 8 seconds, as I did not have to spend any time typing, looking for commands, or using nano to changhe the document. Instead the time is just based on how fast the computer can run the commands.
 
 
 # Thank You
