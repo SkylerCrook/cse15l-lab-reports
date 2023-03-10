@@ -25,7 +25,7 @@ To attempt the challenge these where the rules we had to follow:
 
 # My Original Attempts
 
-Originally I ran all of the tests using individual commands and nano to edit the file
+Originally I ran all of the tests using individual commands and nano to edit the file, achieving a fastest time of 26 seconds.
 
 Commands I used:
 
